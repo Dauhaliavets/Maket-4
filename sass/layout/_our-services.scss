@@ -1,0 +1,75 @@
+.our_services {
+    background-color: #f6f6f6;
+    padding: 289px 0px 355px;
+}
+
+.our_services-left {
+    flex-basis: 397px;
+    .our_services-title {
+        margin-bottom: 6px;
+    }
+
+    .our_services-content {
+        margin-top: 56px;
+        color: $color-text;
+        font-family: 'proxima_novaregular';
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 26px;
+    }
+}
+
+.our_services-right {
+    flex-basis: 559px;
+    position: relative;
+    .row-1, .row-2, .row-3 {
+        transform: rotate(-45deg);
+        display: flex;
+        position: absolute;
+    }
+    .row-1 {
+        top: 0;
+        left: -292px;
+    }
+    .row-2 {
+        top: 0;
+        left: -5px;
+    }
+    .row-3 {
+        top: -72px;
+        right: -292px;
+    }
+        .row_item {
+            width: 193px;
+            height: 193px;
+            background-color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            .row_item_icon, h4 {
+                // display: block;
+                position: absolute;
+                transform: rotate(45deg);
+            }
+            .row_item_icon {
+                top: 60px;
+                right: 65px;
+            }
+            h4 {
+                text-align: center;
+                margin-top: 20px;
+                margin-left: -20px;
+            }
+            &:hover {
+                background-color: #28282e;
+                cursor: pointer;
+                h4 {
+                    color: #ffffff;
+                }
+            }
+        }
+        .row_item:not(:last-child) {
+            margin-right: 10px;
+        }
+}

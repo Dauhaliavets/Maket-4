@@ -1,0 +1,23 @@
+.line {
+    height: 1px;
+} 
+
+.short {
+    width: 20px;
+} 
+
+.long {
+    width: 100%;
+} 
+
+.light {
+    background-color: $color-line-light;
+}
+
+.dark {
+    background-color: $color-line-dark;
+}
+
+.opacity {
+    opacity: 0.1;
+}

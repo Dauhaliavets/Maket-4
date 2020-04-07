@@ -1,0 +1,69 @@
+.project {
+    background-color: #28282e;
+    padding: 244px 0px 205px;
+}
+
+.project_description {
+    flex-basis: 462px;
+    .project-title {
+        text-transform: none;
+        color: #ffffff;
+        letter-spacing: normal;
+        margin-bottom: 17px;
+    }
+    .project-content {
+        color: #ffffff;
+        font-family: 'proxima_novaregular';
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 26px;
+        margin-top: 56px;
+        margin-bottom: 72px;
+    }
+}
+
+.project_presentation {
+    flex-basis: 561px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    .device {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        // .device_item {
+
+        // }
+    }
+    .device_icon {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        .device_icon_item {
+            opacity: 0.2;
+            &:not(:last-child) {
+                margin-right: 40px;
+            }
+            &:hover {
+                cursor: pointer;
+                opacity: 1;
+            }
+        }
+    }
+}
+
+.slider {
+    .slider_dot {
+        width: 3px;
+        height: 25px;
+        background-color: #ffffff;
+        opacity: 0.2;
+        &:hover {
+            cursor: pointer;
+            opacity: 1;
+        }
+        &:not(:last-child) {
+            margin-bottom: 10px;
+        }
+    }
+}

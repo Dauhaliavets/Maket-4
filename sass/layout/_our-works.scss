@@ -1,0 +1,19 @@
+.our_works {
+    padding: 121px 0px 118px;
+}
+
+.our_works-title {
+    margin-bottom: 6px;
+}
+
+.our_works-right {
+    flex-basis: 429px;
+    margin-right: 173px;
+    .our_works-content {
+        color: $color-text;
+        font-family: 'proxima_novaregular';
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 26px;
+    }
+}
