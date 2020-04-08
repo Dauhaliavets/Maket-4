@@ -6,6 +6,8 @@
     <link href="https://fonts.googleapis.com/css?family=Merriweather|Open+Sans:400,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="fonts/proxima_ssv/stylesheet.css">
     <link rel="stylesheet" href="fonts/gotham-rounded-cufonfonts-webfont/style.css">
+    <link rel="stylesheet" href="owncarousel/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="owncarousel/css/owl.theme.default.min.css">
     <link rel="stylesheet" href="sass/main.css">
     <title>Maket 4</title>
 </head>
@@ -117,30 +119,19 @@
                 <a href="#" class="button">See it live</a>
             </div>
             <div class="project_presentation">
-                <div class="device">
+                <div class="device owl-carousel owl-theme" id="owlCarousel2">
                     <div class="device_item">
                         <img src="img/project/phone.png" alt="phone">
                     </div>
-                    <!-- <div class="tablet">
+                    <div class="device_item">
                         <img src="img/project/tablet.png" alt="tablet">
                     </div>
-                    <div class="desctop">
+                    <div class="device_item">
                         <img src="img/project/desctop.png" alt="desctop">
-                    </div> -->
-                </div>
-                <div class="device_icon">
-                    <div class="device_icon_item">
-                        <img src="img/project/icon-mob.png" alt="icon-mob">
-                    </div>
-                    <div class="device_icon_item">
-                        <img src="img/project/icon-tab.png" alt="icon-tab">
-                    </div>
-                    <div class="device_icon_item">
-                        <img src="img/project/icon-mac.png" alt="icon-mac">
                     </div>
                 </div>
             </div>
-            <div class="slider">
+            <div class="slider_dots">
                 <div class="slider_dot"></div>
                 <div class="slider_dot"></div>
                 <div class="slider_dot"></div>
@@ -214,11 +205,153 @@
             </div>
             <div class="line long dark opacity"></div>
             <div class="link">
-                <a href="#" class="see_all">Meet the entire team</a>
+                <a href="#" class="link">See all Articles here</a>
             </div>
         </div>
     </section>
     
+<!-- Section TEAMS -->
+    <section class="teams">
+        <div class="wrapper flex-container">
+            <div class="teams_info">
+                <h2 class="teams_info_title">Who are we?</h2>
+                <div class="line short dark margin"></div>
+                <a href="#" class="link">Meet the entire team</a>
+                <p class="teams_info_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus aliquet purus et orci tincidunt tempus. Duis ultricies, lorem sit amet hendrerit sodales, orci dolor vulputate metus.</p>
+            </div>
+            <div class="teams_album">
+                <div class="row-1">
+                    <div class="row_item">
+                        <img src="img/teams/Layer_5.png" alt="Layer_5">
+                        <div class="row_item-rectangle">
+                            <p class="row_item-rectangle-name">Charlie Waite</p>
+                            <p class="row_item-rectangle-post">UI Designer</p>
+                        </div>
+                    </div>
+                    <div class="row_item">
+                        <img src="img/teams/Layer_6.png" alt="Layer_6">
+                        <div class="row_item-rectangle">
+                            <p class="row_item-rectangle-name">Martin Matrone</p>
+                            <p class="row_item-rectangle-post">Lead Developer</p>
+                        </div>
+                    </div>
+                    <div class="row_item">
+                        <img src="img/teams/Layer_7.png" alt="Layer_7">
+                        <div class="row_item-rectangle">
+                            <p class="row_item-rectangle-name">Steve Flaulkin</p>
+                            <p class="row_item-rectangle-post">Sr. UI Designer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row-2">
+                    <div class="row_item">
+                        <img src="img/teams/Layer_8.png" alt="Layer_8">
+                        <div class="row_item-rectangle">
+                            <p class="row_item-rectangle-name">Chystine Hineu</p>
+                            <p class="row_item-rectangle-post">Lead Designer</p>
+                        </div>
+                    </div>
+                    <div class="row_item">
+                        <img src="img/teams/Layer_9.png" alt="Layer_9">
+                        <div class="row_item-rectangle">
+                            <p class="row_item-rectangle-name">Martin Matrone</p>
+                            <p class="row_item-rectangle-post">Lead Developer</p>
+                        </div>
+                    </div>
+                    <div class="row_item">
+                        <img src="img/teams/Layer_10.png" alt="Layer_10">
+                        <div class="row_item-rectangle">
+                            <p class="row_item-rectangle-name">Jack Knife</p>
+                            <p class="row_item-rectangle-post">Designer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row-3">
+                    <div class="row_item">
+                        <img src="img/teams/Layer_11.png" alt="Layer_11">
+                        <div class="row_item-rectangle">
+                            <p class="row_item-rectangle-name">Martin Matrone</p>
+                            <p class="row_item-rectangle-post">Lead Developer</p>
+                        </div>
+                    </div>
+                    <div class="row_item">
+                        <img src="img/teams/Layer_12.png" alt="Layer_12">
+                        <div class="row_item-rectangle">
+                            <p class="row_item-rectangle-name">Ricki Hall</p>
+                            <p class="row_item-rectangle-post">Developer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+<!-- Section SLOW LIFE -->
+    <section class="slow_life">
+        <div class="wrapper">
+            <h2 class="slow_life-title">Slow Life (Vimeo)</h2>
+            <p class="slow_life-description">Donec sed odio dui. Nulla vitae elit libero, a pharetra augue. Nullam id dolor id nibh ultricies vehicula ut id elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Duis mollis, est non commodo luctus, nisi erat porttitor ligula eget.</p>
+            <div class="slow_life-slider owl-carousel owl-theme" id="owlCarousel3">
+                <div>
+                    <img src="img/slow-life/mountains.png" alt="">
+                </div>
+                <div>
+                    <img src="img/slow-life/12.jpg" alt="">
+                </div>
+                <div>
+                    <img src="img/slow-life/23.jpg" alt="">
+                </div>
+                <div>
+                    <img src="img/slow-life/34.jpg" alt="">
+                </div>
+                <div>
+                    <img src="img/slow-life/45.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Section LETS TALK -->
+    <section class="lets_talk">
+        <div class="wrapper">
+            <a href="#">Let’s Talk</a>
+            <form action="" method="get" class="form">
+                <input type="text">
+                <input type="text">
+            </form>
+        </div>
+    </section>
+
+<!-- Section FOOTER -->
+    <footer class="footer">
+        <div class="wrapper flex-container">
+            <a href="#">&copy; 2014 Ravin</a>
+            <a href="mailto:contact@office.com">contact@office.com</a>
+            <a href="tel:+919000000000">+91 9000 000 000</a>
+            <a href="#">3 R.R.C street, Tamilnadu, India</a>
+        </div>
+    </footer>
+
+<!-- Scripts Owlcarousel -->
+    <script src="owncarousel/js/jquery.min.js"></script>
+    <script src="owncarousel/js/owl.carousel.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#owlCarousel2").owlCarousel({
+                items: 1,
+                loop: true,
+                dots: true,
+                center: true,
+                autoplay:true,
+                autoplayTimeout:5000,
+            });
+            $("#owlCarousel3").owlCarousel({
+                items: 1,
+                loop: true,
+                margin: 100,
+                dots: true
+            });
+        });
+    </script>
 </body>
 </html>

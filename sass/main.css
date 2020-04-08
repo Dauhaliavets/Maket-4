@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -84,6 +88,7 @@ h4 {
 
 .short {
   width: 20px;
+  display: inline-block;
 }
 
 .long {
@@ -102,6 +107,11 @@ h4 {
   opacity: 0.1;
 }
 
+.margin {
+  margin-bottom: 5px;
+  margin-right: 9px;
+}
+
 .button {
   display: inline-block;
   padding: 25px 35px;
@@ -115,6 +125,15 @@ h4 {
   letter-spacing: 1.4px;
   text-decoration: none;
   margin-top: 40px;
+}
+
+.link {
+  color: #ef443a;
+  font-family: "Merriweather", serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 26px;
+  text-decoration: none;
 }
 
 .wrapper {
@@ -268,7 +287,7 @@ h4 {
 
 .project {
   background-color: #28282e;
-  padding: 244px 0px 205px;
+  padding: 244px 0px 268px;
 }
 
 .project_description {
@@ -292,47 +311,61 @@ h4 {
 
 .project_presentation {
   flex-basis: 561px;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
+  height: 380px;
 }
 .project_presentation .device {
-  align-items: center;
-  display: flex;
-  justify-content: center;
+  max-width: 552px;
+  height: 380px;
+  top: -72px;
 }
-.project_presentation .device_icon {
-  align-items: center;
-  display: flex;
-  justify-content: center;
+.project_presentation .device .device_item {
+  text-align: center;
 }
-.project_presentation .device_icon .device_icon_item {
+.project_presentation .device .device_item img {
+  width: auto;
+  margin: 0 auto;
+}
+.project_presentation .device .owl-dots button:not(:first-child) {
+  margin-right: 20px;
+}
+.project_presentation .device .owl-dots button span {
+  width: 75px;
+  height: 46px;
+  border-radius: 0px !important;
+}
+.project_presentation .device .owl-dots button:nth-child(1) span {
+  background: url("../img/project/icon-mob.png") center no-repeat !important;
   opacity: 0.2;
 }
-.project_presentation .device_icon .device_icon_item:not(:last-child) {
-  margin-right: 40px;
+.project_presentation .device .owl-dots button:nth-child(2) span {
+  background: url("../img/project/icon-tab.png") center no-repeat !important;
+  opacity: 0.2;
 }
-.project_presentation .device_icon .device_icon_item:hover {
-  cursor: pointer;
-  opacity: 1;
+.project_presentation .device .owl-dots button:nth-child(3) span {
+  background: url("../img/project/icon-mac.png") center no-repeat !important;
+  opacity: 0.2;
+}
+.project_presentation .device .owl-dots .active span {
+  background-color: #ffffff !important;
+  opacity: 1 !important;
 }
 
-.slider .slider_dot {
+.slider_dots .slider_dot {
   width: 3px;
   height: 25px;
   background-color: #ffffff;
   opacity: 0.2;
 }
-.slider .slider_dot:hover {
+.slider_dots .slider_dot:hover {
   cursor: pointer;
   opacity: 1;
 }
-.slider .slider_dot:not(:last-child) {
+.slider_dots .slider_dot:not(:last-child) {
   margin-bottom: 10px;
 }
 
 .read_our_minds {
-  padding: 119px 0px 118px;
+  padding: 119px 0px 0px;
 }
 
 .our_minds-title {
@@ -410,18 +443,173 @@ h4 {
   margin: 40px auto;
   text-align: center;
 }
-.link .see_all {
-  color: #ef443a;
-  font-family: "Merriweather", serif;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 26px;
-  text-decoration: none;
-}
 
 .layout-3-column {
   display: flex;
   justify-content: space-between;
+}
+
+.teams {
+  background-color: #f6f6f6;
+  padding: 289px 0px 381px;
+}
+
+.teams_info {
+  flex-basis: 410px;
+}
+.teams_info .teams_info_title {
+  margin-bottom: 22px;
+}
+.teams_info .teams_info_text {
+  margin-top: 51px;
+  color: #888888;
+  font-family: "proxima_novaregular";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.teams_album {
+  flex-basis: 650px;
+  position: relative;
+}
+.teams_album .row-1, .teams_album .row-2, .teams_album .row-3 {
+  transform: rotate(-45deg);
+  width: 600px;
+  height: 193px;
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+}
+.teams_album .row-1 {
+  top: -55px;
+  left: -215px;
+}
+.teams_album .row-2 {
+  top: -55px;
+  left: 70px;
+}
+.teams_album .row-3 {
+  top: -55px;
+  left: 355px;
+}
+.teams_album .row_item {
+  width: 193px;
+  height: 193px;
+  display: flex;
+  margin-right: 10px;
+  position: relative;
+  overflow: hidden;
+}
+.teams_album .row_item img {
+  width: 193px;
+  height: 193px;
+}
+.teams_album .row_item:last-child {
+  margin-right: 0px;
+}
+.teams_album .row_item:hover {
+  cursor: pointer;
+}
+.teams_album .row_item:hover .row_item-rectangle {
+  top: 76px;
+  transition: top 0.3s linear 0s;
+}
+.teams_album .row_item .row_item-rectangle {
+  width: 273px;
+  height: 137px;
+  background-color: #ef4035;
+  opacity: 0.9;
+  position: absolute;
+  transform: rotate(45deg);
+  top: 269px;
+  left: -89px;
+}
+.teams_album .row_item .row_item-rectangle .row_item-rectangle-name {
+  color: #ffffff;
+  font-family: "proxima_novaregular";
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.35px;
+  text-align: center;
+  margin-top: 14px;
+  margin-bottom: 7px;
+}
+.teams_album .row_item .row_item-rectangle .row_item-rectangle-post {
+  color: #ffffff;
+  font-family: "Merriweather", serif;
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 0.13px;
+  text-align: center;
+}
+
+.slow_life {
+  background-color: #28282e;
+  padding: 138px 0px 152px;
+}
+
+.slow_life-title {
+  color: #f6f6f6;
+  font-family: "Merriweather", serif;
+  font-size: 39px;
+  font-weight: 400;
+  line-height: 54px;
+  text-align: center;
+  text-transform: none;
+}
+
+.slow_life-description {
+  max-width: 660px;
+  color: #f6f6f6;
+  font-family: "proxima_novaregular";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: center;
+  margin: 60px auto 55px;
+}
+
+.slow_life-slider .owl-dots {
+  margin-top: 58px !important;
+}
+.slow_life-slider .owl-dots button:not(:last-child) {
+  margin-right: 35px;
+}
+.slow_life-slider .owl-dots button span {
+  background-color: #1e1e20 !important;
+}
+.slow_life-slider .owl-dots .active span {
+  background-color: #ffffff !important;
+}
+
+.lets_talk {
+  background-color: #ef4035;
+  text-align: center;
+  padding: 54px 0px;
+}
+.lets_talk a {
+  color: #ffffff;
+  font-family: "proxima_novaregular";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  text-decoration: none;
+}
+
+.footer {
+  background-color: #28282e;
+  padding: 71px 0px;
+}
+.footer a {
+  color: #76767b;
+  font-family: "proxima_novaregular";
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0.97px;
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,96 @@
+.teams {
+    background-color: #f6f6f6;
+    padding: 289px 0px 381px;
+}
+
+.teams_info {
+    flex-basis: 410px;
+    .teams_info_title {
+        margin-bottom: 22px;
+    }
+    .teams_info_text {
+        margin-top: 51px;
+        color: $color-text;
+        font-family: 'proxima_novaregular';
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 26px;
+    }
+}
+
+.teams_album {
+    flex-basis: 650px;
+    // height: 400px;
+    position: relative;
+    .row-1, .row-2, .row-3 {
+        transform: rotate(-45deg);
+        width: 600px;
+        height: 193px;
+        display: flex;
+        justify-content: flex-end;
+        position: absolute;
+    }
+    .row-1 {
+        top: -55px;
+        left: -215px;
+    }
+    .row-2 {
+        top: -55px;
+        left: 70px;
+    }
+    .row-3 {
+        top: -55px;
+        left: 355px;
+    }
+        .row_item {
+            width: 193px;
+            height: 193px;
+            display: flex;
+            margin-right: 10px;
+            position: relative;
+            overflow: hidden;
+            img {
+                width: 193px;
+                height: 193px;
+            }
+            &:last-child {
+                margin-right: 0px;
+            }
+            &:hover {
+                cursor: pointer;
+                .row_item-rectangle {
+                    top: 76px;
+                    transition: top .3s linear 0s;
+                }
+            }
+            .row_item-rectangle {
+                width: 273px;
+                height: 137px;
+                background-color: #ef4035;
+                opacity: 0.9;
+                position: absolute;
+                transform: rotate(45deg);
+                top: 269px;
+                left: -89px;
+                .row_item-rectangle-name {
+                    color: #ffffff;
+                    font-family: 'proxima_novaregular';
+                    font-size: 14px;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    letter-spacing: 0.35px;
+                    text-align: center;
+                    margin-top: 14px;
+                    margin-bottom: 7px;
+                }
+                .row_item-rectangle-post {
+                    color: #ffffff;
+                    font-family: 'Merriweather', serif;
+                    font-size: 13px;
+                    font-weight: 400;
+                    letter-spacing: 0.13px;
+                    text-align: center;
+                }  
+            }
+        }
+}

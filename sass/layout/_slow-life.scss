@@ -1,0 +1,44 @@
+.slow_life {
+    background-color: #28282e;
+    padding: 138px 0px 152px;
+}
+
+.slow_life-title {
+    color: #f6f6f6;
+    font-family: 'Merriweather', serif;
+    font-size: 39px;
+    font-weight: 400;
+    line-height: 54px;
+    text-align: center;
+    text-transform: none;
+}
+
+.slow_life-description {
+    max-width: 660px;
+    color: #f6f6f6;
+    font-family: 'proxima_novaregular';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: center;
+    margin: 60px auto 55px;
+}
+
+.slow_life-slider{
+    .owl-dots {
+        margin-top: 58px !important;
+        button:not(:last-child) {
+            margin-right: 35px;
+        } 
+        button {
+            span {
+                background-color: #1e1e20 !important;
+            }
+        }
+        .active {
+            span{
+                background-color: #ffffff !important;
+            }
+        }
+    }
+}

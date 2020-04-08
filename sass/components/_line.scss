@@ -4,6 +4,7 @@
 
 .short {
     width: 20px;
+    display: inline-block;
 } 
 
 .long {
@@ -20,4 +21,9 @@
 
 .opacity {
     opacity: 0.1;
+}
+
+.margin {
+    margin-bottom: 5px;
+    margin-right: 9px;
 }
